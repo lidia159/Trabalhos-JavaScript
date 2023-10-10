@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Exibe um alerta solicitando o salário ao usuário
+var salario = parseFloat(prompt("Por favor, digite o seu salário:"));
+
+// Exibe um menu de opções
+var escolha = prompt("Escolha uma alternativa:\nA - Acrescentar 10%\nB - Acrescentar 15%\nC - Acrescentar 20%");
+
+// Variável para armazenar o novo salário
+var novoSalario;
+
+// Verifica a escolha do usuário e calcula o novo salário
+switch (escolha.toUpperCase()) {
+    case "A":
+        novoSalario = salario + (salario * 0.10);
+        break;
+    case "B":
+        novoSalario = salario + (salario * 0.15);
+        break;
+    case "C":
+        novoSalario = salario + (salario * 0.20);
+        break;
+    default:
+        alert("Escolha inválida!");
+        break;
+}
+
+// Exibe o novo salário calculado
+if (novoSalario !== undefined) {
+    alert("O novo salário é: R$ " + novoSalario.toFixed(2));
+}
+
+    </script>
+</body>
+</html>
