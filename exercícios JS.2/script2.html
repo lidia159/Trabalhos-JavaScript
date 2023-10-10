@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador = 0; // Contador para controlar as 10 notas
+var soma = 0;     // Variável para armazenar a soma das notas
+
+while (contador < 10) {
+    var nota = parseFloat(prompt("Digite a nota " + (contador + 1) + ":"));
+    
+    // Verifica se a nota é válida (entre 0 e 10)
+    if (nota >= 0 && nota <= 10) {
+        soma += nota;
+        contador++;
+    } else {
+        alert("Nota inválida. Digite uma nota entre 0 e 10.");
+    }
+}
+
+var media = soma / 10;
+alert("Média das notas: " + media.toFixed(2) + "\nSoma das notas: " + soma.toFixed(2));
+
+    </script>
+</body>
+</html>

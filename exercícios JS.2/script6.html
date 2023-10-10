@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Digite um número inteiro entre 1 e 10 para gerar a tabuada:"));
+
+// Verifica se o número está dentro do intervalo válido
+if (numero >= 1 && numero <= 10) {
+    console.log("Tabuada de " + numero + ":");
+
+    var i = 1;
+    while (i <= 10) {
+        var resultado = numero * i;
+        console.log(numero + " x " + i + " = " + resultado);
+        i++;
+    }
+} else {
+    console.log("Número fora do intervalo válido (1 a 10).");
+}
+
+    </script>
+    
+</body>
+</html>

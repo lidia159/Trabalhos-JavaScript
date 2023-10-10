@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador = 0; // Inicializa o contador de números pares
+var tentativas = 0; // Inicializa o contador de tentativas
+while (tentativas < 10) {
+    var numero = parseInt(prompt("Digite um número:"));
+    
+    // Verifica se o número é par
+    if (numero % 2 === 0) {
+        contador++;
+    }
+    
+    tentativas++;
+}
+
+alert("A quantidade de números pares digitados é: " + contador);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var maiorValor = Number.MIN_SAFE_INTEGER; // Inicializa com o menor valor possível
+var menorValor = Number.MAX_SAFE_INTEGER; // Inicializa com o maior valor possível
+var soma = 0; // Inicializa a soma
+
+for (var i = 0; i < 10; i++) {
+    var numero = parseInt(prompt("Digite o " + (i + 1) + "º valor inteiro e positivo:"));
+
+    // Verifica se o número é positivo e atualiza o maior e o menor valor
+    if (numero >= 0) {
+        if (numero > maiorValor) {
+            maiorValor = numero;
+        }
+        if (numero < menorValor) {
+            menorValor = numero;
+        }
+        soma += numero;
+    } else {
+        alert("Número inválido. Digite um número inteiro e positivo.");
+        i--; // Volta para a mesma iteração para pedir outro número
+    }
+}
+
+var media = soma / 10;
+
+alert("Maior valor: " + maiorValor +
+      "\nMenor valor: " + menorValor +
+      "\nMédia dos valores: " + media.toFixed(2));
+
+    
+    </script>
+</body>
+</html>
